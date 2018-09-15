@@ -88,16 +88,13 @@ move:a8_9"""
 parseyBoi(testText)
 print commandList
 
-def mainLoop():
-	#get stuff from twitch chat
-	#turn that into a list of things
-	print "hello"
-	twitchList = []
-
+def mainLoop(twitchList):
 	# Checks the logs from the twitch chat, using up to ten of them
 	maxRange = len(twitchList)
 	if len(twitchList) > 9:
 		maxRange = 10
 	for x in range (0,maxRange):
 		parseyBoi(twitchList[x])
+
+	#execute the first thing on the command list
 
