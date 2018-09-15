@@ -1,11 +1,16 @@
-Directions: (all directions are expected to be immediately followed by a number specifying the distance it should go)
+Directions: (all directions are expected to be immediately followed by a number specifying the distance it should go e.g. d40)
 	l - left
 	r - right
 	u - up
 	d - down
-	a# - angle (letter a followed by a number)
+	a# - angle (letter a followed by a number.  Make sure to put a _ between the two numbers for angle and distance e.g. a30_40)
 
 Commands:
 	dip - move crane over to paint and reapply to brush
 	move - tells crane to move, must be followed by a ":" and a direction command
-	repeat#() - will repeat any command in the parentheses the specified number of times. Nested repeats disallowed. Maximum of number of repeats set as 9, if a number is entered larger the 9 the command will not be counted.
+
+Example set of movements:
+	move:r40
+	move:d30
+	move:r2
+	move:a35_6
