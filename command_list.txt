@@ -1,4 +1,4 @@
-Directions:
+Directions: (all directions are expected to be immediately followed by a number specifying the distance it should go)
 	l - left
 	r - right
 	u - up
