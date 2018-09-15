@@ -1,0 +1,11 @@
+Directions:
+	l - left
+	r - right
+	u - up
+	d - down
+	a# - angle (letter a followed by a number)
+
+Commands:
+	dip - move crane over to paint and reapply to brush
+	move - tells crane to move, must be followed by a ":" and a direction command
+	repeat#() - will repeat any command in the parentheses the specified number of times. Nested repeats disallowed. Maximum of number of repeats set as 9, if a number is entered larger the 9 the command will not be counted.
