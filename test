@@ -1,0 +1,12 @@
+import socket
+
+TWITCH_USERNAME = "thehammieboyes"
+TWITCH_OATH = "oauth:pvvnv26e9y88bro7yyjfbvp6orzdj3"
+
+irc = socket.socket()
+print("Connecting\n")
+irc.connect(("irc.chat.twitch.tv", 6667))
+
+print("Joining\n")
+irc.send("PASS " + TWITCH_OATH + "\r\n")
+irc.send("NICK " + TWITCH_USERNAME + "\r\n")
