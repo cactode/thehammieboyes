@@ -1,14 +1,16 @@
+#!/usr/bin/python3
 import socket
 import time
 import sys
 from command_parser import mainLoop
 from skycrane.config import NICK, PASS, PORT, HOST  
 
-interval = 5
+interval = 1
 words = []
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 try:
+    print("Attempting to connect")
     s.connect((HOST, PORT))
 except :
     sys.exit("Did not connect to host\n")
