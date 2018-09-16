@@ -34,7 +34,9 @@ while True:
 
         if len(parts) < 3:
             continue
-
+        if parts[2] == "Please Leave ME" :
+            s.send(bytes("PART #" + NICK + "\r\n", "UTF-8"))
+            print("I AM LEAVING NOW")
         words.append(parts[2])
  
     if time.monotonic() > myTime + interval:
